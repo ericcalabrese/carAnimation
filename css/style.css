@@ -17,6 +17,10 @@ body {
 }
 
 #wheel-front{
+	animation: GoWheel 5s linear 0s infinite;
+	-moz-animation: GoWheel 5s linear 0s infinite;
+	-webkit-animation: GoWheel 5s linear 0s infinite;
+
 	background: url(../img/wheel.png) no-repeat;
 	float: left;
 	height: 80px;
@@ -26,10 +30,29 @@ body {
 }
 
 #wheel-back{
+	animation: GoWheel 5s linear 0s infinite;
+	-moz-animation: GoWheel 5s linear 0s infinite;
+	-webkit-animation: GoWheel 5s linear 0s infinite;
+
 	background: url(../img/wheel.png) no-repeat;
 	float: left;
 	height: 80px;
 	width: 80px;
 	margin-left: 617px;
 	margin-top: -75px;
+}
+
+@keyframes GoWheel{
+	0%{transform: rotate(0deg)}
+	100%{transform: rotate(-360deg)}
+}
+
+@-moz-keyframes GoWheel{
+	0%{transform: rotate(0deg)}
+	100%{transform: rotate(-360deg)}
+}
+
+@-webkit-keyframes GoWheel{
+	0%{transform: rotate(0deg)}
+	100%{transform: rotate(-360deg)}
 }
