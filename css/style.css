@@ -1,4 +1,8 @@
 body {
+	animation: GoBackground 10s linear infinite;
+	-moz-animation: GoBackground 10s linear infinite;
+	-webkit-animation: GoBackground 10s linear infinite;
+
 	background: #000 url(../img/bg.jpg) repeat-x 0 0;
 	height: 100%;
 }
@@ -55,4 +59,25 @@ body {
 @-webkit-keyframes GoWheel{
 	0%{transform: rotate(0deg)}
 	100%{transform: rotate(-360deg)}
+}
+
+@keyframes GoBackground{
+	0%{background-position:0px 0px;}
+	100%{background-position:1000px 0px;}
+}
+
+@-moz-keyframes GoBackground{
+	0%{background-position:0px 0px;}
+	100%{background-position:1000px 0px;}
+}
+
+@-webkit-keyframes GoBackground{
+	0%{background-position:0px 0px;}
+	100%{background-position:1000px 0px;}
+}
+
+.pause {
+	animation-play-state: paused !important;
+	-webkit-animation-play-state: paused !important;
+	-moz-animation-play-state: paused !important;
 }

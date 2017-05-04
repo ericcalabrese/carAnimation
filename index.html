@@ -3,7 +3,16 @@
 <head>
 	<title>Animated Car</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		$('#car-body').click(function(){
+				$('body').toggleClass('pause');
+				$('#wheel-front').toggleClass(' pause');
+				$('#wheel-back').toggleClass(' pause');
+		});
+	});
+	</script>
 </head>
 <body>
 	<div id="container">
